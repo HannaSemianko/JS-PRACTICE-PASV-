@@ -1,0 +1,26 @@
+
+Напишите функцию с именем convertNumber, которая принимает целое положительное десятичное число num в качестве аргумента и возвращает массив, 
+в котором это число записано в десятичной, двоичной, восьмеричной и шестнадцатеричной системе счисления.
+
+Примеры:
+
+функция convertNumber(5) должна возвратить [5, 101, 5, 5];
+функция convertNumber(9) должна возвратить [9, 1001, 11, 9];
+функция convertNumber(12) должна возвратить [12, 1100, 14, "c"];
+функция convertNumber(32) должна возвратить [32, 100000, 40, "20"].
+
+
+Write a function called convertNumber that takes a positive decimal integer num as an argument and returns an array in which this number is written in decimal,
+binary, octal, and hexadecimal notation.
+
+Examples:
+
+the convertNumber(5) function should return [5, 101, 5, 5];
+the convertNumber(9) function should return [9, 1001, 11, 9];
+the convertNumber(12) function should return [12, 1100, 14, "c"];
+the convertNumber(32) function should return [32, 100000, 40, "20"].
+
+
+function convertNumber(num){
+  return [num, +num.toString(2), +num.toString(8), num.toString(16)]; 
+}
