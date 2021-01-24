@@ -1,0 +1,21 @@
+Напишите функцию с именем convertNumber, которая принимает целое положительное десятичное число num и число n (основание системы счисления) в качестве аргументов 
+и возвращает число, записанное в системе счисления с основанием n или undefined, если перевод в такую систему невозможен.
+
+to Примеры:
+
+функция convertNumber(9, 2) должна возвратить "1001";
+функция convertNumber(135, 40) должна возвратить undefined.
+
+
+Write a function named convertNumber that takes a positive decimal integer num and a number n (base of the number system) as arguments
+and returns a number written in the base of the number system n or undefined, if translation to such a system is not possible.
+
+to Examples:
+
+the convertNumber(9, 2) function should return "1001";
+the convertNumber(135, 40) function should return undefined.
+
+
+function convertNumber(num, n){
+ return (n >=2 && n <= 36) ? num.toString(n) : undefined;
+}
