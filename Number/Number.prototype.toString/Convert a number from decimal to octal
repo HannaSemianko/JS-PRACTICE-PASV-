@@ -1,0 +1,20 @@
+Напишите функцию с именем numToOctal, которая принимает целое положительное десятичное число num в качестве аргумента и возвращает это число,
+записанное в восьмеричной системе счисления.
+
+Примеры:
+
+функция numToOctal(5) должна возвратить 5;
+функция numToOctal(8) должна возвратить 10;
+функция numToOctal(15) должна возвратить 17.
+
+Write a function named numToOctal that takes the positive decimal integer num as an argument and returns this number written in octal notation.
+
+Examples:
+
+the numToOctal(5) function should return 5;
+the numToOctal(8) function should return 10;
+the numToOctal(15) function should return 17.
+
+function numToOctal(num){
+  return +num.toString(8);
+}
