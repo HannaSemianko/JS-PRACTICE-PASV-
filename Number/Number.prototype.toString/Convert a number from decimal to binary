@@ -1,0 +1,22 @@
+Напишите функцию с именем numToBinary, которая принимает целое положительное десятичное число num в качестве аргумента и возвращает это число, 
+записанное в двоичной системе счисления.
+
+Примеры:
+
+функция numToBinary(5) должна возвратить 101;
+функция numToBinary(2) должна возвратить 10;
+функция numToBinary(12) должна возвратить 1100;
+функция numToBinary(60) должна возвратить 111100.
+
+Write a function named num To Binary that takes a positive decimal integer num as an argument and returns this number written in binary notation.
+
+Examples:
+
+the numToBinary(5) function should return 101;
+the numToBinary(2) function should return 10;
+the numToBinary(12) function should return 1100;
+the numToBinary(60) function should return 111100.
+
+function numToBinary(num){
+ return +num.toString(2);
+}
