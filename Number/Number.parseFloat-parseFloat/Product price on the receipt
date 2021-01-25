@@ -1,0 +1,25 @@
+На чеке магазина напечатана цена товара и название товара в виде: "2.59 milk". Получить цену товара в виде числа.
+
+Напишите функцию priceOfItem, которая принимает строку receipt (описание покупки в виде строки: "цена название товара") в качестве аргумента и возвращает число - цену товара.
+
+Примеры:
+
+функция priceOfItem("2.59 milk") должна возвратить 2.59.
+функция priceOfItem("4.55 bread") должна возвратить 4.55.
+функция priceOfItem("2 cake") должна возвратить 2.
+функция priceOfItem(".4 water") должна возвратить 0.4.
+
+The store's receipt contains the price of the product and the product name in the form: "2.59 milk". To the price of goods in the form of a number.
+
+Write the function price Of Item, which takes the string receipt (description of the purchase in the form of a string: "price product name") as an argument and returns a number - the price of the product.
+
+Examples:
+
+the function price Of Item("2.59 milk") should return 2.59.
+the function price Of Item ("4.55 bread") should return 4.55.
+the function price of Item("2 cake") should return 2.
+the function price of Item(".4 water") should return 0.4.
+
+function priceOfItem(receipt){
+  return parseFloat(receipt);
+}
