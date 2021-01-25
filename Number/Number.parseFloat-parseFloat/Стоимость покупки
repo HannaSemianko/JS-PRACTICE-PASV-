@@ -1,0 +1,36 @@
+
+Рассчитываясь в кассе за купленные товары, вы получили чек, в котором напечатаны цены и название товаров в виде:
+
+["18.7 salmon", "9.35 cheese", "2.99 milk", "9.99 chocolate bars"].
+
+Какую сумму денег вы должны заплатить за все покупки?
+
+Напишите функцию purchaseValue, которая принимает массив values, содержащий цены и название каждого купленного товара в качестве аргумента
+и возвращает общую стоимость покупки.
+
+Примеры:
+
+функция purchaseValue(['1.31 bread', '7.96 cabbage', '2.10 candies', '0.84 salad']) должна возвратить 12.21.
+функция purchaseValue(['1.50 onion') должна возвратить 1.5.
+
+When paying at the checkout for purchased products, you received a receipt with prices and product names printed in the form:
+
+["18.7 salmon"," 9.35 cheese"," 2.99 milk","9.99 chocolate bars"].
+
+How much money should you pay for all purchases?
+
+Write the purchaseValue function, which takes an array of values containing the prices and name of each purchased item as an argument
+and returns the total purchase price.
+
+Examples:
+
+the purchaseValue function (['1.31 bread', '7.96 cabbage', '2.10 candies', '0.84 salad']) should return 12.21.
+the purchase Value function (['1.50 onion') should return 1.5.
+
+function purchaseValue(values){
+  let sum = 0;
+  for ( let el of values) {
+    sum+= parseFloat(el);
+  }
+  return sum;
+}
