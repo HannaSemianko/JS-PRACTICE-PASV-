@@ -1,0 +1,24 @@
+
+Напишите функцию ringSquare, которая принимает 2 числа r1, r2 (внешний и внутренний радиусы кольца) (r1 > r2) в качестве аргументов и возвращает площадь кольца. 
+Результат округлите до 2 знаков после запятой и возвратите в виде числа.
+
+ring
+
+Примеры:
+
+функция ringSquare(2, 1) должна возвратить 9.42.
+функция ringSquare(5, 4) должна возвратить 28.27.
+
+Write a hing Square function that takes 2 numbers r1, r2 (the outer and inner radii of the ring) (r1 > r2) as arguments and returns the area of the ring. 
+Round the result to 2 decimal places and return it as a number.
+
+ring
+
+Examples:
+
+the king Square(2, 1) function should return 9.42.
+the kingsquare(5, 4) function should return 28.27.
+
+function ringSquare(r1, r2){
+  return +(Math.PI * r1 ** 2 - Math.PI * r2 ** 2).toFixed(2);
+}
