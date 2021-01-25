@@ -1,0 +1,24 @@
+
+Напишите функцию average, которая принимает массив marks (массив отметок учеников) в качестве аргумента и возвращает средний балл успеваемости в классе. 
+Результат округлите до 1 знака после запятой и возвратите в виде строки.
+
+Пример:
+
+функция average([4, 5, 4, 5]) должна возвратить "4.5".
+функция average([5, 3]) должна возвратить "4.0".
+
+Write the average function, which takes an array of args (an array of student marks) as an argument and returns the average grade point in the class. 
+Round the result to 1 decimal place and return it as a string.
+
+Example:
+
+the average function([4, 5, 4, 5]) should return "4.5".
+the average([5, 3]) function should return "4.0".
+
+function average(marks){
+  let sum = 0;
+  for ( let i = 0; i < marks.length; i++){
+    sum+= marks[i];
+  }
+  return (sum / marks.length).toFixed(1);
+}
