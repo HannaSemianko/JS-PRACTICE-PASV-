@@ -1,0 +1,32 @@
+Необходимо отформатировать элементы массива:
+
+элемент с индексом 0 - до 0 знаков после запятой;
+элемент с индексом 1 - до 1 знаков после запятой;
+элемент с индексом 2 - до 2 знаков после запятой;
+элемент с индексом 3 - до 3 знаков после запятой; и так далее.
+Напишите функцию с именем formatArray, которая принимает массив arr в качестве аргумента и и возвращает массив,
+в котором каждый элемент отформатирован в соответствии с данным правилом.
+
+Пример:
+
+функция formatArray([1.345, 2.234, 3.1234, 4.56789]) должна возвратить [1, 2.2, 3.12, 4.568].
+
+You should format the array elements:
+
+element with index 0-up to 0 decimal places;
+element with index 1 - up to 1 decimal places;
+element with index 2-up to 2 decimal places;
+an element with an index of 3 - up to 3 decimal places; and so on.
+Write a function named format Array that takes an array arr as an argument and returns an array in which each element is formatted according to this rule.
+
+Example:
+
+formatArray function([1.345, 2.234, 3.1234, 4.56789]) must return [1, 2.2, 3.12, 4.568].
+
+
+function formatArray(arr){
+  for ( let i = 0; i < arr.length; i++) {
+    arr[i] = +(arr[i]).toFixed(i);
+  }
+  return arr;
+}
