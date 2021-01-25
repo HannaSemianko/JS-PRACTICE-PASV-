@@ -1,0 +1,19 @@
+Напишите функцию convertRadiansToDegrees, которая принимает значение n (угол в радианах) в качестве аргумента и возвращает значение угла в градусах. 
+Результат округлите до 2 знаков после запятой и возвратите в виде числа.
+
+Примеры:
+
+функция convertRadiansToDegrees(1) должна возвратить 57.30.
+функция convertRadiansToDegrees(2) должна возвратить 114.59.
+
+Write the convert RadiansToDegrees function, which takes the value n (angle in radians) as an argument and returns the angle value in degrees.
+Round the result to 2 decimal places and return it as a number.
+
+Examples:
+
+the convertRadiansToDegrees(1) function should return 57.30.
+the convertRadiansToDegrees(2) function should return 114.59.
+
+function convertRadiansToDegrees(n){
+  return +((180 * n )/ Math.PI).toFixed(2);
+}
