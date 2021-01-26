@@ -1,0 +1,20 @@
+https://www.codewars.com/kata/what-is-type-of-variable
+
+Create a function to return true type of variable, i.e.
+
+type([]) == 'array'
+type({}) == 'object'
+type('') == 'string'
+type(NaN) == 'number'
+
+function type(value) {
+  let str = {}.toString.call(value);
+    console.log(str);
+    if (str === "[object Array]") return 'array'; 
+    if (str ===  "[object Object]") return 'object';
+    if (str ===  "[object String]") return 'string';
+    if (str ===  "[object Date]") return 'date';
+    if (str ===  "[object Number]") return 'number';
+    if (str ===  "[object Null]") return 'null';
+    else return 'undefined';
+}
