@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5b097da6c3323ac067000036
+
+Alice's band plays a Nirvana inspired grunge and has been rated 20 for Heaviness, 32 for Originality and only 18 for Outfits. Bob listens to Slayer and has gotten a good 48 for Heaviness, 25 for Originality and a rather honest 40 for Outfits.
+
+The total score should be followed by a colon : and by one of the following quotes: if Alice's band wins: Alice made "Kurt" proud! if Bob's band wins: Bob made "Jeff" proud! if they end up with a draw: that looks like a "draw"! Rock on!
+
+The solution to the example above should therefore appear like '1, 2: Bob made "Jeff" proud!'.
+
+
+function solve(a, b) {
+  let countA = 0;
+  let countB = 0;
+    if (a[0]>b[0]) countA++;
+    if (a[0]<b[0]) countB++;
+    if (a[1]>b[1]) countA++;
+    if (a[1]<b[1]) countB++;
+    if (a[2]>b[2]) countA++;
+    if (a[2]<b[2]) countB++;
+      if (countA > countB) return `${countA}, ${countB}: Alice made "Kurt" proud!`;
+      if (countA < countB ) return `${countA}, ${countB}: Bob made "Jeff" proud!`;
+      else return `${countA}, ${countB}: that looks like a "draw"! Rock on!`;
+}
