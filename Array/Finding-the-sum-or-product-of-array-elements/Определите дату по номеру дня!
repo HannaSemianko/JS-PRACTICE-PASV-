@@ -1,0 +1,28 @@
+Какая дата соответствует 100-му дню года? А какая дата соответствует дню с номером 200? 
+А ведь ответ зависит еще от того, является ли год високосным или нет!
+
+Напишите функцию, которая поможет определить дату, если известен номер дня в году, а также то, каким является год - високосным или нет.
+Функция принимает номер дня day и булеву величину isLeap в качестве аргументов и возвращает дату года в виде строки "Month, day".
+Во всех тестах номер дня - число от 1 до 366.
+
+
+What date corresponds to the 100th day of the year? And what date corresponds to the day with the number 200?
+But the answer also depends on whether the year is a leap year or not!
+
+Write a function that will help you determine the date if you know the number of days in the year, as well as whether the year is a leap year or not.
+The function takes the day number and the Boolean value isLeap as arguments and returns the date of the year as the string "Month, day". 
+In all tests, the number of the day is a number from 1 to 366.
+
+
+function getDay(day, isLeap){
+let year = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+if (isLeap) year = [ 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+ let sum = 0;
+ let i = 0;
+ while  (sum < day) {
+   sum += year[i];
+   i++;
+ }
+ let month = ["January", "February", 'March', 'April', 'May', 'June', "July", "August", 'September', "October", "November", 'December'];
+ return `${month[i-1]}, ${day - (sum - year[i-1])}`;
+}
