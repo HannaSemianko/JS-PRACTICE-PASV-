@@ -1,0 +1,43 @@
+Массив содержит отметки учащихся класса. Какое количество учеников имеют балл, выше чем среднего? 
+(Т.е. сколько учеников имеет балл, который выше среднего арифметического элементов массива).
+
+Напишите функцию aboveAverageScore, которая принимает массив отметок arr в качестве аргумента и возвращает количество учеников,
+у которых балл выше среднего. Во всех тестах массив непустой.
+
+Используйте в решении цикл. Не разрешается использование методов массивов.
+
+Пример:
+
+функция aboveAverageScore([3, 4, 5]) должна возвратить 1 (средний балл равен 4, и только одно число 5 > 4);
+функция aboveAverageScore([4, 5]) должна возвратить 1;
+функция aboveAverageScore([2, 3, 5]) должна возвратить 1;
+функция aboveAverageScore([2, 2, 2]) должна возвратить 0.
+
+The array contains the marks of students in the class.
+How many students have a higher-than-average score? (I.e., how many students have a score that is higher than the arithmetic mean of the array elements).
+
+Write the above Average Score function, which takes an array of ar marks as an argument and returns the number of students whose score is above average.
+In all tests, the array is non-empty.
+
+Use a loop in the solution. Do not allow the use of methods of arrays.
+
+Example:
+
+the aboveAverageScore([3, 4, 5]) function should return 1 (the average score is 4, and only one number is 5 > 4);
+the aboveAverageScore([4, 5]) function should return 1;
+the aboveAverageScore([2, 3, 5]) function should return 1;
+the aboveAverageScore([2, 2, 2]) function should return 0.
+
+function aboveAverageScore(arr){
+  let sum = 0;
+  let count = 0;
+  for ( let el of arr){
+    sum += el;
+  }
+  let avg = sum / arr.length;
+    for ( let el of arr){
+      if ( el > avg)
+        count++;
+    } 
+ return count;  
+}
