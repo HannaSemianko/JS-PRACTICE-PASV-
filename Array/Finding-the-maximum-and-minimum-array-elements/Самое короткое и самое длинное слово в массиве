@@ -1,0 +1,28 @@
+Напишите функцию words, которая принимает массив строк arr в качестве аргумента 
+и возвращает самое короткое и самое длинное слово в виде массива [shortestWord, longestWord]. 
+Гарантируется, что во всех тестах массив содержит хотя бы одно слово. Если слова одинаковой длины, то возвращается первое из них в списке.
+Используйте в решении циклы. Не разрешается использование методов Math.min() и Math.max().
+
+
+Write a words function that takes an array of arr strings as an argument
+and returns the shortest and longest word as an array [shortestWord, longestWord]. 
+It is guaranteed that the array contains at least one word in all tests. If the words are the same length, the first one in the list is returned.
+Use loops in the solution. Do not allow the use of methods of Math.min() and Math.max().
+
+function words(arr){
+ let max = arr[0].length;
+ let strMax = arr[0];
+ let min = arr[0].length;
+ let strMin = arr[0];
+ for (let i = 1; i < arr.length; i++){
+   if (arr[i].length > max) {
+     max = arr[i].length;
+     strMax = arr[i];
+   }
+   if ( arr[i].length < min) {
+     min = arr[i].length;
+     strMin = arr[i];
+   }
+  }
+  return [strMin, strMax];
+}
