@@ -1,0 +1,40 @@
+Напишите функцию changeMaxAndMin, которая принимает массив arr в качестве аргумента и возвращает массив, в котором максимальный 
+и минимальный элементы поменялись местами. Если в массиве несколько максимальных или несколько минимальных элементов, 
+поменять местами первые из них. Во всех тестах массив содержит минимум два элемента.
+Используйте в решении циклы. Не разрешается использование методов Math.min() и Math.max().
+Пример:
+•	функция changeMaxAndMin([3, 4, 8, 1]) должна возвратить [3, 4, 1, 8];
+•	функция changeMaxAndMin([3, 4, 8, 4, 1, 2, 1]) должна возвратить [3, 4, 1, 4, 8, 2, 1];
+•	функция changeMaxAndMin([8, 8, 2, 1, 1]) должна возвратить [1, 8, 2, 8, 1];
+•	функция changeMaxAndMin([7, 8]) должна возвратить [8, 7];
+•	функция changeMaxAndMin([2, 2]) должна возвратить [2, 2].
+
+
+Write a changeMaxAndMin function that takes an arr array as an argument and returns an array in which the maximum and minimum elements are swapped.
+If there are several maximum or several minimum elements in the array, swap the first ones. In all tests, the array contains at least two elements.
+Use loops in the solution. Do not allow the use of methods of Math.min() and Math.max().
+Example:
+* changeMaxAndMin function([3, 4, 8, 1]) must return [3, 4, 1, 8];
+* changeMaxAndMin function([3, 4, 8, 4, 1, 2, 1]) must return [3, 4, 1, 4, 8, 2, 1];
+* changeMaxAndMin function([8, 8, 2, 1, 1]) must return [1, 8, 2, 8, 1];
+* the changeMaxAndMin([7, 8]) function should return [8, 7];
+* the changeMax
+
+
+function changeMaxAndMin(arr){
+ let min =  arr[0];
+ let indMin = 0, indMax = 0;
+ let max =  arr[0];
+   for ( let i = 1; i < arr.length; i++){
+     if ( arr[i] < min ){
+       min = arr[i];
+       indMin = i;
+     }
+     if ( arr[i] > max){
+       max = arr[i];
+       indMax = i;
+     }     
+   }
+  arr[indMin] = max;
+  arr[indMax] = min;
+ return arr;
