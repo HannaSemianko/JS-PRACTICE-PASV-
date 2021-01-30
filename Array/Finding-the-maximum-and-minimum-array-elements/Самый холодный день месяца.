@@ -1,0 +1,43 @@
+
+Специалисты центра наблюдения за погодой ежедневно фиксируют температуру воздуха и записывают данные в массив.
+
+Массив из 30 значений хранит данные о температуре воздуха в апреле.
+
+Например, массив содержит значения [12, 13, 16, 10,..., 20].
+
+Предположим, в этом массиве самая низкая температура 10. Это значит, что самый холодный день был 4 апреля.
+(Помните, что нумерация дней месяца начинается с 1, а нумерация элементов в массиве начинается с нуля).
+
+Определить, какой день был самым холодным. Если самая низкая температура была несколько дней, вернуть последний день.
+
+Напишите функцию theColdestDay, которая принимает массив arr, содержащий данные о температуре в апреле, 
+и возвращает информацию о самом холодном дне апреля в виде строки:
+
+"April 4 was the coldest day of the month: it was 10 degrees."
+
+Во всех тестах входной массив не является пустым.
+
+
+Specialists of the weather monitoring center record the air temperature daily and record data in an array.
+
+An array of 30 values stores data about the air temperature in April.
+
+For example, an array contains values [12, 13, 16, 10,..., 20].
+
+Let's assume that the lowest temperature in this array is 10. This means that the coldest day was April 4. 
+(Remember that the numbering of the days of the month starts from 1, and the numbering of elements in the array starts from zero).
+
+Determine which day was the coldest. If the lowest temperature was several days, return the last day.
+
+Write the Coldest Day function, which takes an arr array containing April temperature data and returns information about the coldest day of April as a string:
+
+"April 4 was the coldest day of the month: it was 10 degrees."
+
+In all tests, the input array is not empty.
+
+
+function theColdestDay(arr){
+  let min = Math.min(...arr);
+  let ind = arr.lastIndexOf(min);
+  return `April ${[ind+1]} was the coldest day of the month: it was ${min} degrees.`
+}
