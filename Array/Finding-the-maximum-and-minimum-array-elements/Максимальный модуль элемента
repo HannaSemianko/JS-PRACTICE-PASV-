@@ -1,0 +1,27 @@
+Напишите функцию maxAbsValue, которая принимает массив arr в качестве аргумента и возвращает элемент, который имеет максимальную абсоютную величину (модуль). 
+При равных значениях возвращается первое в списке.
+Используйте в решении цикл. Не разрешается использование метода Math.max().
+Пример:
+•	функция maxAbsValue([3, 7, -8, 1]) должна возвратить -8;
+•	функция maxAbsValue([-11, 6, 12) должна возвратить 12;
+•	функция maxAbsValue([1, -2, 2]) должна возвратить -2;
+•	функция maxAbsValue([]) должна возвратить undefined.
+
+Write the max Abs Value function, which takes the arr array as an argument and returns the element that has the maximum absolute value (modulus). 
+If the values are equal, the first value in the list is returned.
+Use a loop in the solution. Do not allow the use of the method Math.max().
+Example:
+* * max Abs Value function([3, 7, -8, 1]) should return -8;
+• * the max Abs Value([-11, 6, 12) function should return 12;
+• * the max Abs Value([1, -2, 2]) function should return -2;
+• * the max Abs Value ([]) function should return undefined.
+
+
+function maxAbsValue(arr){
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++){
+    if (Math.abs(arr[i]) > Math.abs(max))
+      max = arr[i];
+    }
+  return max; 
+}
