@@ -1,0 +1,29 @@
+Напишите функцию theLongestWord, которая принимает массив строк arr в качестве аргумента и возвращает слово максимальной длины.
+Гарантируется, что во всех тестах массив содержит хотя бы одно слово.
+Используйте в решении цикл. Не разрешается использование метода Math.max().
+Пример:
+•	функция theLongestWord(["a", "big", "elephant"]) должна возвратить "elephant";
+•	функция theLongestWord(["mouse", "cat") должна возвратить "mouse";
+•	функция theLongestWord(["test"]) должна возвратить "test".
+
+
+Write the longest Word function, which takes an array of arr strings as an argument and returns a word of maximum length. 
+It is guaranteed that the array contains at least one word in all tests.
+Use a loop in the solution. Do not allow the use of the method Math.max().
+Example:
+• * the longest Word(["a", "big", "elephant"]) function should return "elephant";
+• * the Longest Word(["mouse", "cat") function should return "mouse";
+• * the longest Word(["test"]) function should return "test".
+
+
+function theLongestWord(arr){
+ let max = arr[0].length;
+ let str = arr[0];
+ for (let i = 1; i < arr.length; i++){
+   if (arr[i].length > max) {
+     max = arr[i].length;
+     str = arr[i];
+   }
+  }
+  return str;
+}
