@@ -1,0 +1,41 @@
+Массив хранит информацию о машинах в автосалоне и их ценах. Данные о каждой машине представлены в виде массива [made, price] (например, ["Mazda", 17000]). 
+Получить название самой дорогой машины. Если в массиве окажется несколько машин с одинаковой ценой, вернуть первую из них.
+
+Напишите функцию mostExpensiveCar, которая принимает массив arr, содержащий данные о машинах и возвращает название самой дорогой машины. 
+Во всех тестах входной массив не является пустым.
+
+Используйте в решении цикл. Не разрешается использование метода Math.max().
+
+Пример:
+
+функция mostExpensiveCar([["Honda", 18500], ["Toyota", 21200], ["BMW", 19900]]) должна возвратить "Toyota";
+функция mostExpensiveCar([["Honda", 18000], ["Toyota", 18000]]) должна возвратить "Honda";
+функция mostExpensiveCar([["BMW", 19900]]) должна возвратить "BMW".
+
+
+The array stores information about cars in the dealership and their prices.
+Data about each car is represented as an array [made, price] (for example, ["Mazda", 17000]).
+Get the name of the most expensive car. If there are several cars with the same price in the array, return the first one.
+
+Write the most Expensive Car function, which takes an arr array containing data about cars and returns the name of the most expensive car.
+In all tests, the input array is not empty.
+
+Use a loop in the solution. Do not allow the use of the method Math.max().
+
+Example:
+
+the function of most Expensive Car([["Honda", 18500], ["Toyota", 21200], ["BMW", 19900]]) should return "Toyota";
+the function of most Expensive Car([["Honda", 18000], ["Toyota", 18000]]) should return "Honda";
+the function of most Expensive Car([["BMW", 19900]]) should return "BMW".
+
+function mostExpensiveCar(arr){
+  let max = arr[0][1];
+  let ind = 0;
+  for ( let i = 1; i < arr.length; i++){
+    if ( arr[i][1] > max){
+      max = arr[i][1];
+      ind = i;
+    }
+  }
+return arr[ind][0];  
+}
