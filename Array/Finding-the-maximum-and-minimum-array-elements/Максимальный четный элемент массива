@@ -1,0 +1,22 @@
+Write the maxEven function, which takes the arr array as an argument and returns the maximum even element of the array. 
+If the array does not contain even elements or the array is empty, return undefined.
+
+Use a loop in the solution. Do not allow the use of the method Math.max().
+
+Example:
+
+maxEven function([3, 4, 8, 17]) must return 8;
+maxEven function([11, 12, 3, 35) must return 12;
+the maxEven([1, 5]) function should return undefined;
+the maxven ([]) function should return undefined.
+
+
+function maxEven(arr){
+let arrEven = arr.filter(el => el % 2 === 0);
+  let max = arrEven[0];
+  for (let i = 1; i < arrEven.length; i++){
+    if (arrEven[i] > max)
+      max = arrEven[i];
+    }
+  return max;
+}
