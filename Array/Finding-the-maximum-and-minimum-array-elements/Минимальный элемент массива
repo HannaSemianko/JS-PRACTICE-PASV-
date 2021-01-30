@@ -1,0 +1,23 @@
+Напишите функцию minInArray, которая принимает массив arr в качестве аргумента и возвращает минимальный элемент массива.
+Используйте в решении цикл. Не разрешается использование метода Math.min().
+Пример:
+•	функция minInArray([3, 4, 8, 1]) должна возвратить 1;
+•	функция minInArray([11, 12) должна возвратить 11;
+•	функция minInArray([1, 1]) должна возвратить 1;
+•	функция minInArray([]) должна возвратить undefined.
+
+Write a minInArray function that takes an arr array as an argument and returns the minimum element of the array.
+Use a loop in the solution. Do not allow the use of the method Math.min().
+Example:
+* minInArray function([3, 4, 8, 1]) must return 1;
+* the minInArray([11, 12) function should return 11;
+* the minInArray([1, 1]) function should return 1;
+* the minInArray ([]) function should return undefined.
+
+function minInArray(arr){
+  let min = arr[0];
+  for ( let i = 1; i < arr.length;i++){
+    if ( arr[i] < min) min = arr[i];
+  }
+  return min;
+}
