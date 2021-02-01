@@ -1,0 +1,39 @@
+Клавдия пьет в течение дня разные напитки. Информацию о том, что она выпивает, Клавдия записывает в массив, например,
+
+["3 glasses of water", "1 glass of milk", "2 glasses of juice", "1 glass of wine"]
+
+Какой объем жидкости выпила Клавдия за день?
+
+Напишите функцию hydrate, которая принимает массив arr, содержащий строки с названием и количеством стаканов выпитого напитка,
+и возвращает общее количество выпитой жидкости в мл.
+
+1 стакан = 200 мл
+
+Примеры:
+
+функция hydrate(["3 glasses of water", "1 glass of milk", "2 glasses of juice", "1 glass of wine"]) должна возвратить "1400 ml".
+функция hydrate(["1 glass of water"]) должна возвратить "200 ml".
+
+Claudia drinks various drinks throughout the day. Information about what she drinks, Claudia writes in an array, for example,
+
+["3 glasses of water", "1 glass of milk", "2 glasses of juice", " 1 glass of wine"]
+
+How much liquid did Claudia drink during the day?
+
+Write the hydrate function, which takes an arr array containing strings with the name and number of glasses of the drink consumed, 
+and returns the total amount of liquid consumed in ml.
+
+1 Cup = 200 ml
+
+Examples:
+
+the hydrate function (["3 glasses of water", "1 glass of milk", "2 glasses of juice", "1 glass of wine"]) should return "1400 ml".
+the hydrate(["1 glass of water"]) function should return "200 ml".
+
+function hydrate(arr){
+let amount = 0;
+  for ( let el of arr){
+    amount+= parseInt(el);
+  }
+return `${amount * 200} ml`;
+}
