@@ -1,0 +1,36 @@
+Напишите функцию isStringContainsNumber, которая принимает строку str в качестве аргумента и возвращает true, если строка содержит целое число, и false, в противном случае.
+
+Указание: строка содержит целое число, если результат нестрогого сравнения исходной строки и преобразования строки к целому числу равен true.
+
+Например,
+
+'45' == Number.parseInt('45'); (результат сравнения '45' == 45 равен true)
+
+'1z2' == Number.parseInt('1z2'); (результат сравнения '1z2' == 1 равен false)
+
+Примеры:
+
+функция isStringContainsNumber("123") должна возвратить true.
+функция isStringContainsNumber("-34") должна возвратить true.
+функция isStringContainsNumber("s12") должна возвратить false.
+
+
+Write the isstringcontainsnumber function, which takes the string str as an argument and returns true if the string contains an integer, and false otherwise.
+
+Note: a string contains an integer if the result of a non-strict comparison of the source string and conversion of the string to an integer is true.
+
+For example,
+
+'45' = = Number. parseInt('45'); (comparison result '45' == 45 is true)
+
+"1z2' == Number.parseInt ('1 z2'); (comparison result '1 z2' == 1 is false)
+
+Examples:
+
+the isstringcontainsnumber("123") function should return true.
+the isStringContainsNumber("-34") function should return true.
+the isStringContainsNumber("s12") function should return false.
+
+function isStringContainsNumber(str){
+  return str == Number.parseInt(str);
+}
