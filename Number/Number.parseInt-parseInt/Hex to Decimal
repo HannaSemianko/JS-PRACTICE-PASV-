@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/hex-to-decimal
+
+Complete the function which converts hex number (given as a string) to a decimal number.
+
+function hexToDec(hexString){
+let str =  parseInt(hexString, 16);
+  return +str.toString();
+}
