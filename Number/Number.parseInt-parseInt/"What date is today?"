@@ -1,0 +1,25 @@
+На вопрос: "Какое сегодня число?" мы иногда кратко отвечаем: "5th of September", "16th of May", и так далее. Ваша задача - получить дату (только число).
+
+Напишите функцию getDay, которая принимает строку answer (строка, содержащая дату) в качестве аргумента и возвращает число - день месяца.
+
+Примеры:
+
+функция getDay("5th of September") должна возвратить 5.
+функция getDay("16th of May") должна возвратить 16.
+функция getDay("The 5th of April") должна возвратить NaN.
+
+
+To the question :" what date is today?" we sometimes respond briefly: "5th of September", "16th of May", and so on. Your task is to get the date (only the number).
+
+Write a getDay function that takes the string answer (a string containing a date) as an argument and returns a number - the day of the month.
+
+Examples:
+
+the getDay("5th of September") function should return 5.
+the getDay("16th of May") function should return 16.
+the getDay("the 5th of April") function should return NaN.
+
+
+function getDay(answer){
+  return parseInt(answer);
+}
