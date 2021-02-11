@@ -1,0 +1,27 @@
+
+Напишите функцию deleteFiveElements, которая принимает массив arr в качестве аргумента, удаляет первые пять элементов массива и возвращает полученный массив.
+
+Пример:
+
+функция deleteFiveElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) должна возвратить [6, 7, 8, 9, 10];
+функция deleteFiveElements([1, 2, 3, 4, 5, 6]) должна возвратить [6];
+функция deleteFiveElements([1, 2, 3, 4, 5]) должна возвратить [];
+функция deleteFiveElements([1, 2, 3]) должна возвратить [];
+функция deleteFiveElements([]) должна возвратить [].
+
+Write the delete Five Elements function, which takes the arr array as an argument, deletes the first five elements of the array, and returns the resulting array.
+
+Example:
+
+deleteFiveElements function([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) must return [6, 7, 8, 9, 10];
+deleteFiveElements function([1, 2, 3, 4, 5, 6]) should return [6];
+deleteFiveElements function([1, 2, 3, 4, 5]) must return [];
+deleteFiveElements([1, 2, 3]) function should return [];
+deleteFiveElements([]) function should return [].
+
+function deleteFiveElements(arr){
+for (let i = 0; i < 5; i++){
+  arr.shift();
+}
+return arr; 
+}
