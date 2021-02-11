@@ -1,0 +1,31 @@
+Напишите функцию deleteNElements, которая принимает массив arr и целое число n в качестве аргументов, удаляет первые n элементов массива
+и возвращает полученный массив.
+
+Пример:
+
+функция deleteNElements([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) должна возвратить [4, 5, 6, 7, 8, 9, 10];
+функция deleteNElements([1, 2, 3, 4, 5, 6], 5) должна возвратить [6];
+функция deleteNElements([1, 2, 3, 4, 5], 5) должна возвратить [];
+функция deleteNElements([1, 2, 3], 5) должна возвратить [];
+функция deleteNElements([1, 2, 3], 0) должна возвратить [1, 2, 3];
+функция deleteNElements([], 10) должна возвратить [].
+
+
+Write the deleteelements function, which takes an array arr and an integer n as arguments, deletes the first n elements of the array,
+and returns the resulting array.
+
+Example:
+
+deleteNElements function([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3) must return [4, 5, 6, 7, 8, 9, 10];
+deleteNElements function([1, 2, 3, 4, 5, 6], 5) should return [6];
+deleteNElements function([1, 2, 3, 4, 5], 5) must return [];
+deleteNElements([1, 2, 3], 5) should return [];
+deleteNElements([1, 2, 3], 0) must return [1, 2, 3];
+deleteNElements([], 10) function should return [].
+
+function deleteNElements(arr, n){
+  for (let i = 0; i < n; i++){
+    arr.shift();
+  }
+  return arr;
+}
