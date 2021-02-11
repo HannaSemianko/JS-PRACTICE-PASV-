@@ -1,0 +1,38 @@
+Дан массив, в начале которого находится некоторое количество нечисловых элементов, после которых могут находиться числа. 
+Напишите функцию deleteNotNumbers, которая принимает смешанный массив arr в качестве аргумента, удаляет все нечисловые элементы массива,
+находящиеся до первого числа, и возвращает полученный массив.
+
+Пример:
+
+функция deleteNotNumbers(['a', 'b', 1, 2, 3]) должна возвратить [1, 2, 3];
+функция deleteNotNumbers([true, false, "a", 1, 2, 3]) должна возвратить [1, 2, 3];
+функция deleteNotNumbers([1, 2, 3]) должна возвратить [1, 2, 3];
+функция deleteNotNumbers(['a', 'b']) должна возвратить [];
+функция deleteNotNumbers(['a', 'b', 2, 'a']) должна возвратить [2, 'a'];
+функция deleteNotNumbers([]) должна возвратить [].
+
+Given an array with a certain number of non-numeric elements at the beginning,
+which can be followed by numbers. Write the delete Not Numbers function, 
+which takes a mixed array arr as an argument, deletes all non-numeric elements of the array that are before the first number, and returns the resulting array.
+
+Example:
+
+deleteNotNumbers['a', 'b', 1, 2, 3]) function should return [1, 2, 3];
+deleteNotNumbers([true, false, "a", 1, 2, 3]) function should return [1, 2, 3];
+deleteNotNumbers([1, 2, 3]) function should return [1, 2, 3];
+deleteNotNumbers(['a', 'b']) function should return [];
+deleteNotNumbers(['a', 'b', 2, 'a']) function should return [2, 'a'];
+deleteNotNumbers([]) function should return [].
+
+function deleteNotNumbers(arr){
+let count = 0;
+for (let el of arr){
+  if (typeof el !== 'number'){
+   count++;
+  } else {break;}
+}
+ for ( let i = 0; i < count; i++){
+   arr.shift();
+ }
+return arr;
+}
