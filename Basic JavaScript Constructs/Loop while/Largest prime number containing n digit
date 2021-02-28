@@ -8,5 +8,20 @@ largest(2); //Should return 97
 Do not mind the pattern as it is just an incident ! And make sure to return false if the input is not an integer :D
 This might seem simple at first, it is, but keep an eye on the performance. Go for it !
 
+function isPrime(num){
+  if(num <= 1) return false;
+  for(let i = 2; i < Math.round(Math.abs(num)); i++){
+    if(num % i === 0) return false;
+  }
+  return true;
+}
 
+var largest = (n) => {
+  let num = 10 ** n;
+  console.log(num)
+  while(!isPrime(num)){
+    num--;
+  }
+  return num;
+}
 
