@@ -33,3 +33,11 @@ You will only be given integers types - however negative values (edge cases) wil
 Happy coding!
 
 
+function animals(heads, legs){
+  if(heads < 0 || legs < 0) return "No solutions";
+  let cow =(legs - 2 * heads) / 2;
+  let chic = heads -cow;
+  if(cow % 1 !== 0 || chic % 1 !== 0 || cow < 0 ||chic < 0 ) return "No solutions";
+  else return [chic, cow];
+}
+
