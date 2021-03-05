@@ -1,0 +1,16 @@
+Первая: дан массив int, нужно вывести элементы массива, которые дают искомую сумму. 
+Например, массив будет {4, 3, 5, 2}. Сумма 6. В результате метод должен вернуть ответ {4, 2}.
+
+
+function sum(int, num){
+  let arr = [];
+  for(let i = 0; i < int.length; i++){
+    for(let j = i + 1; j < int.length; j++){
+      if(int[i] + int[j] === num)
+        arr.push(int[i], int[j]);
+    }
+  }
+  return arr;
+}
+
+console.log(sum([4, 3, 5, 2],8));
