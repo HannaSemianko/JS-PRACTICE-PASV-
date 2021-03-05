@@ -1,3 +1,12 @@
  Вторая задача. Дано две строки. Нужно вывести true если все символы из второй строки присутствуют в первой.
  Например,  строка 1 "tan", строка 2 "ant" - будет true.
  Второй пример: 1 "day", 2 "may" - будет false. Третий пример: 1 "tenth", 2 "ent" - будет true. 
+
+
+function compare(str1, str2){
+  for(let i = 0; i < str2.length; i++){
+      if (str1.includes(str2[i])) {continue;}
+       else {return false;}
+    }
+  return true;
+}
