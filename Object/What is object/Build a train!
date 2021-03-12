@@ -1,0 +1,33 @@
+https://www.codewars.com/kata/60398a8c64b9d5000d84f6a9/train/javascript
+
+Your job is to return the amount of metal needed to build the train. You are given a string. The string will look something like this:
+
+str = 'A________'
+Where the 'A' is a type of a locomotive and "_ " is a coach after the train.
+
+RULES:
+
+A = 15 pieces of metal
+
+B = 10 pieces of metal
+
+C = 7 pieces of metal
+
+D = 8 pieces of metal
+
+The coaches take 5 pieces of metal to make(for each).
+
+###EXAMPLE###
+
+train('A_') = 20, 15 for A type, and 5 for coach
+The value is supposed to be an integer
+
+Another example:
+
+train('B__') = 20, 10 for B type, and 10 for coaches(2 coaches, 5 pieces of metal each)
+All translations and edits welcome!
+
+function train(s) {
+let obj = {"A": 15, "B": 10, "C": 7, "D": 8};
+return  obj[s[0]] + (s.length - 1) * 5;
+}
