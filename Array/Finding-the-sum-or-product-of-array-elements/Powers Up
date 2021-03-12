@@ -1,0 +1,24 @@
+https://www.codewars.com/kata/6001f1b46aad3700080d20a7/train/javascript
+
+In this kata, you have two input numbers, number and upTo.
+
+For example,
+    Let's assume number is 3 and upTo is 5,
+    Then you need to calculate "3^1 + 3^2 + 3^3 + 3^4 + 3^5"
+    So it equals to "3 + 9 + 27 + 81 + 243" and it is "363"
+    
+TASK:
+Calculate the result.
+
+Notes:
+
+number always equals or greater than 0.
+upTo always equals or greater than 1.
+
+function powersUp(number, upTo) {
+let sum = 0;
+  for(let i = 1; i <= upTo; i++){
+    sum += Math.pow(number, i);
+  }
+return sum
+}
