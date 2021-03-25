@@ -3,7 +3,7 @@ Array.prototype.concat-
 
 Возвращает новый объединенный массив. Исходный массив остается неизменным.
 
-Синтаксис: const newArray = array.concat(value1[, value2[, ...[, valueN]]])
+Синтаксис: const newArray = array.concat(value1[, value2[, ...[, valueN]]]);
 
 const arr = [1, 2]; const arr2 = [3, 4]; const res = arr.concat(arr2); // res = [1, 2, 3, 4], // arr объединяем с arr2 и получаем новый массив res
 
