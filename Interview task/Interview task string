@@ -3,6 +3,7 @@
  Второй пример: 1 "day", 2 "may" - будет false. Третий пример: 1 "tenth", 2 "ent" - будет true. 
 
 
+
 function compare(str1, str2){
   for(let i = 0; i < str2.length; i++){
       if (str1.includes(str2[i])) {continue;}
