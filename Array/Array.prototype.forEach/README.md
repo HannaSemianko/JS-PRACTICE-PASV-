@@ -1,5 +1,3 @@
-README.md
-Array.prototype.forEach-
 Array.prototype.forEach() – Функция для каждого элемента массива
 
 Конспект
