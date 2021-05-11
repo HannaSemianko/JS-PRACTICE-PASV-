@@ -4,11 +4,13 @@ Math.floor(-2.3); // -3 Math.floor(5.2); // 5 Math.floor(-41.54); // -42 Math.fl
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
 
+
 Метод Math.ceil(x) производит округление x до ближайшего большего целого числа.
 
 Math.ceil(5.5); // 6 Math.ceil(5.4); // 6 Math.ceil(-5.4); // -5 Math.ceil(-2.5); // -2 Подробнее читайте здесь:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
+
 
 Метод Math.round(x) округляет число x до ближайшего целого.
 
