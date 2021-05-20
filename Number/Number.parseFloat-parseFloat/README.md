@@ -15,3 +15,4 @@ console.log(Number.parseFloat('1854.359 ')); // 1854.359 console.log(Number.pars
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat
+
