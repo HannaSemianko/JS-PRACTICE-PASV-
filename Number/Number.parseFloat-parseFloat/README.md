@@ -1,4 +1,4 @@
-
+Number.parseFloat(string) и функция parseFloat(string)
 
 Метод Number.parseFloat(string) и функция parseFloat(string) работают аналогично – принимают строку и возвращают десятичное число.
 
