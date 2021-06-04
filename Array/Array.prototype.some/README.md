@@ -21,7 +21,9 @@ const arr = [-10, -2, 2, 34, 90, 52]; console.log(arr.some(el => el % 2)); // fa
 
 const arr = ['queue', 'line', 'crowd', 'people']; console.log(arr.some((el, i) => i > 1 && el.length > 3)); // true Важно! Если метод some() будет вызван на пустом массиве [], то результатом его работы всегда будет false, независимо от условия, переданного в функцию:
 
-const arr = []; console.log(arr.some(el => Number.isNaN(el))); // false console.log(arr.some(el => typeof el === 'number')); // false Исходный массив, на котором был вызван метод some(), останется неизменным.
+const arr = []; console.log(arr.some(el => Number.isNaN(el))); // false console.log(arr.some(el => typeof el === 'number')); // false 
+
+Исходный массив, на котором был вызван метод some(), останется неизменным.
 
 Подробнее читайте здесь:
 
