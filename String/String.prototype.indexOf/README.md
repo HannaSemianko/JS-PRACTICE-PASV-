@@ -31,4 +31,3 @@ let str = 'Buy milk, cherry, butter, cherry, flour, cherry, sugar.'; let count =
 Подробнее читайте здесь:
 
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
-
